@@ -1,0 +1,258 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Fredoka:wght@300;500;400;700&family=Merriweather:wght@300&family=Montserrat:wght@400;500;600&family=Oswald&family=Poppins:wght@300;400;500;700&family=Red+Rose&display=swap');
+
+
+
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+body{
+    background-color: hsl(0deg 0% 7%);
+    color: white;
+
+}
+
+img{
+    max-width: 100%;
+}
+header{
+    background-color: hsl(0deg 0% 7%);
+    color: white;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+nav{
+    flex: 2;
+}
+.nav-lists{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.hero{
+    width: 500px;
+}
+.personal-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    width: 580px;
+}
+.details :first-child{
+    color: #ca1a27;
+    font-size: 1.5rem;
+    padding: .5rem;
+    font-weight: 600;
+}
+.details > h2{
+    padding: .5rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+    
+}
+.para{
+    padding: .5rem;
+    font-size: .9rem;
+    opacity: .7;
+}
+
+.btn {
+    padding: .9rem 2rem;
+    margin: 1rem;
+    background-color: #ca1a27;
+    border: 0;
+    color: white;
+}
+
+.details > button{
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+
+.card{
+    width:290px;
+    padding: 2rem;
+    background-color: #1e1e1e;
+}
+.card-active{
+    background-color: #ca1a27;
+}
+
+.card-img,
+.card-title,
+.card-text{
+    margin-bottom: 1rem;
+}
+.card-btn{
+    color: #ca1a27;
+}
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    justify-items: center;
+    align-content: center;
+    gap: 2rem;
+    /* margin-left: 5rem; */
+}
+.clients{
+    width:300px;
+    background-color: #1e1e1e;
+    padding: 1rem 2rem;
+    text-align: center;
+
+}
+.clients h1{
+    color: #ca1a27;
+    font-size: 2rem;
+}
+.clients p{
+    font-size: .8rem;
+    padding: .5rem;
+}
+
+.tweleve h1{
+    font-size: 6rem;
+    font-weight: 900;
+    color: #ca1a27;
+}
+
+.featured-projects{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-title{
+    padding: 2rem;
+}
+.feature-title h1{
+    font-weight: 800;
+    padding: .5rem;
+}
+
+.feature-title p{
+    font-size: .8rem;
+    padding: .5rem;
+    padding-top: 0;
+}
+
+.image{
+    width: 49%;
+}
+.image h2{
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding-top: .5rem;
+    margin-left: .5rem;
+}
+
+.image p{
+    color: #ca1a27;
+    padding: .5rem 0;
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.feature-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.decor{
+    width: 600px;
+    height: 390px;
+}
+.py{
+    padding: 3rem 1rem;
+    background-color: #1e1e1e;
+}
+.next-project{
+    max-width: 1200px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.next-title{
+    width: 750px;
+    padding: 2rem;
+    font-size: 1.7rem;
+}
+.next-title > p{
+    font-size: .8rem;
+    padding: .5rem 0;
+    padding-right: 3rem;
+}
+footer{
+    background-color: #1e1e1e;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.footer-nav a{
+    color: #fff;
+    font-size: .9rem;
+}
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.footer-icons{
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    gap: 2rem;
+}
