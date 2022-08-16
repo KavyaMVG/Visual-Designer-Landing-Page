@@ -85,6 +85,8 @@ nav{
     background-color: #ca1a27;
     border: 0;
     color: white;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .details > button{
