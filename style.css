@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Allerta&family=Fredoka:wght@300;500;400;700&family=Merriweather:wght@300&family=Montserrat:wght@400;500;600&family=Oswald&family=Poppins:wght@300;400;500;700&family=Red+Rose&display=swap');
 
-
-
-
 *,
 ::after,
 ::before{
@@ -30,7 +27,9 @@ header{
     background-color: hsl(0deg 0% 7%);
     color: white;
 }
-
+.hide-for-desktop {
+    display: none;
+}
 .nav-bar{
     display: flex;
     align-items: center;
@@ -127,8 +126,7 @@ nav{
 .about{
     display: flex;
     flex-wrap: wrap;
-    width: 660px;
-    justify-items: center;
+    justify-content: center;
     align-content: center;
     gap: 2rem;
     /* margin-left: 5rem; */
@@ -167,7 +165,7 @@ nav{
     align-items: center;
 }
 .feature-title{
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .feature-title h1{
     font-weight: 800;
@@ -181,7 +179,8 @@ nav{
 }
 
 .image{
-    width: 49%;
+    width: 48%;
+    height: 400px;
 }
 .image h2{
     font-weight: 800;
@@ -201,13 +200,12 @@ nav{
     flex-wrap: wrap;
     gap: 1rem;
 }
-.decor{
-    width: 600px;
-    height: 390px;
-}
+
 .py{
     padding: 3rem 1rem;
     background-color: #1e1e1e;
+    height: 80%;
+    width: 100%;
 }
 .next-project{
     max-width: 1200px;
@@ -226,7 +224,6 @@ nav{
 .next-title > p{
     font-size: .8rem;
     padding: .5rem 0;
-    padding-right: 3rem;
 }
 footer{
     background-color: #1e1e1e;
@@ -255,4 +252,104 @@ footer{
     width: 900px;
     justify-content: center;
     gap: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar img{
+        height: 30px;
+    }
+    .btn{
+        padding: .8rem 1.5rem;
+        white-space: nowrap;
+    }
+    .hero{
+        width: 350px;
+    }
+    .details>h2 {
+        font-size: 2rem;
+    }
+    .para{
+        font-size: 0.75rem;
+    }
+    .card{
+        padding:1rem;
+    }
+    .next-title{
+        font-size: 1.25rem;
+    }
+    .next-title p{
+        margin: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .hide-for-desktop {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hide-for-desktop div {
+        height: 3px;
+        width: 1.5rem;
+        background-color: #fff;
+        margin: 5px;
+    }
+
+    .nav-lists{
+        display: none;
+    }
+    .nav-bar{
+        padding: 1rem 2rem;
+    }
+    nav{
+        flex: 0;
+    }
+    .personal-details{
+        display: block;
+    }
+    .hero,
+    .details{
+        width: 100%;
+    }
+    .details{
+        padding: 1rem;
+    }
+    .card-section{
+        display: block;
+    }
+    .card{
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .experience{
+        display: block;
+    }
+    .tweleve{
+        text-align: center;
+        margin: 1rem 0;
+    }
+    .clients{
+        width: 100%;
+    }
+    .btn{
+        padding: 0.5rem;
+    }
+    .feature-title h1{
+        font-size: 1rem;
+    }
+    .feature-title p {
+        font-size: 0.75rem;
+        opacity: 0.75;
+        padding: .8rem 0.5rem;
+    }
+    .image{
+        width: 100%;
+    }
+    .next-title h2{
+        font-size: 1rem
+    }
+    .next-title p {
+        opacity: 0.75;
+    }
 }
