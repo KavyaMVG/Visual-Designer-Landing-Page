@@ -122,6 +122,8 @@ nav{
     align-items: center;
     gap: 3rem;
     padding: 2rem;
+    max-width: 950px;
+    margin: auto;
 }
 .about{
     display: flex;
@@ -351,5 +353,8 @@ footer{
     }
     .next-title p {
         opacity: 0.75;
+    }
+    .footer-logo {
+        width: 25%;
     }
 }
